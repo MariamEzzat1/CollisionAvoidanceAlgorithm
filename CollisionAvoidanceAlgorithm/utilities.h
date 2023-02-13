@@ -24,6 +24,13 @@ double DegToRad(double AngleInDegree);
 *               "DiagonalDistance " the Diagonal distance which is needed to convert to horizontal Distance
 */
 double GetHorizontalDistance(double DiagonalDistance, double Angle);
+/*
+* Description : Convert Given Horizontal Distance to diagonal Distance using the Azimuth Angle
+* Parameters  : "Angle" The azimuth angle
+*               "Horizontal " the Horizontal distance which is needed to convert to diagonal Distance
+*/
+double GetDiagonalDistance(double HorizontalDistance, double Angle);
+
 
 
 

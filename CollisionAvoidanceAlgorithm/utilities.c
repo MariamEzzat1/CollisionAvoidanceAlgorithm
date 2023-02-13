@@ -22,3 +22,10 @@ double GetHorizontalDistance(double DiagonalDistance, double Angle)
 	return HorizontalDistance;
 }
 
+double GetDiagonalDistance(double HorizontalDistance, double Angle)
+{
+	double AnlgeInRad = DegToRad(Angle);
+	double diagonal_distance = HorizontalDistance / cos(AnlgeInRad);
+	return diagonal_distance;
+}
+
