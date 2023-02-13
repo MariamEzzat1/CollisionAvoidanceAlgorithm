@@ -20,12 +20,11 @@ char OverTaking_Flag = 0;
 char LaneChanging_First_Flag = 0;
 char LaneChanging_Second_Flag = 0;
 
-
+double SteeringAngle = 0;
 
 
 int* CollisionAvoidanceAlgorithm()
 {
-
 }
 
 #endif
