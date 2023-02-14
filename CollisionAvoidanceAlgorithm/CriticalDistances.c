@@ -47,4 +47,15 @@ double GetSafeDistanceLeftBackRadar(LeftBackRadar LBR)
 	return 1.5 * BrakeDistance;
 }
 
+double GetBrakeDistanceLeftFrontRadar(double velocity)
+{
+	return (velocity * velocity) / (250 * FRICTION_FACTOR);
+}
+
+double GetSafeDistanceLeftFrontRadar(LeftFrontRadar LFR)
+{
+	double BrakeDistance = GetBrakeDistanceLeftBackRadar(LFR.doppler_velocity);
+	return 1.5 * BrakeDistance;
+}
+
 

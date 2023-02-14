@@ -65,23 +65,23 @@ typedef struct
 /*
 * Description : Calculate the distance between our car and the front car
 */
-double GetDistanceFrontRadar();
+double GetDistanceFrontRadar(FrontRadar FR);
 /*
 * Description : Calculate the distance between our car and the front car at the right lane 
 */
-double GetDistanceRightFrontRadar();
+double GetDistanceRightFrontRadar(RightFrontRadar RFR);
 /*
 * Description : Calculate the distance between our car and the front car at the left lane
 */
-double GetDistanceLeftFrontRadar();
+double GetDistanceLeftFrontRadar(LeftFrontRadar LFR);
 /*
 * Description : Calculate the distance between our car and the back car at the right lane
 */
-double GetDistanceRightBackRadar();
+double GetDistanceRightBackRadar(RightBackRadar RBR);
 /*
 * Description : Calculate the distance between our car and the back car at the left lane
 */
-double GetDistanceLeftBackRadar();
+double GetDistanceLeftBackRadar(LeftBackRadar LBR);
 
 
 #endif

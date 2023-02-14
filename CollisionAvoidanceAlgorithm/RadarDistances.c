@@ -13,32 +13,27 @@
 #include "RadarDistances.h"
 
 
-double GetDistanceFrontRadar()
+double GetDistanceFrontRadar(FrontRadar FR)
 {
-    FrontRadar FR;
-	return FR.range;
+	return FR.range ;
 }
 
-double GetDistanceRightFrontRadar()
+double GetDistanceRightFrontRadar(RightFrontRadar RFR)
 {
-	RightFrontRadar RFR;
-	return RFR.range;
+	return RFR.range ;
 }
 
-double GetDistanceLeftFrontRadar()
+double GetDistanceLeftFrontRadar(LeftFrontRadar LFR)
 {
-	LeftFrontRadar LFR;
-	return LFR.range;
+	return LFR.range ;
 }
 
-double GetDistanceRightBackRadar()
+double GetDistanceRightBackRadar(RightBackRadar RBR)
 {
-	RightBackRadar RBR;
-	return RBR.range;
+	return RBR.range ;
 }
 
-double GetDistanceLeftBackRadar()
+double GetDistanceLeftBackRadar(LeftBackRadar LBR)
 {
-	LeftBackRadar LBR;
-	return LBR.range;
+	return LBR.range ;
 }

@@ -13,6 +13,9 @@
 #include "utilities.h"
 #include "CriticalDistances.h"
 
+#define ROAD_WIDTH 3.75
+#define SAFE_FACTOR_ANGLE 5
+
 typedef enum { KEEP, RIGHT, LEFT } direction;
 direction Dir = KEEP;
 
@@ -23,8 +26,6 @@ char LaneChanging_Second_Flag = 0;
 double SteeringAngle = 0;
 
 
-int* CollisionAvoidanceAlgorithm()
-{
-}
+int* CollisionAvoidanceAlgorithm();
 
 #endif

@@ -73,6 +73,12 @@ double GetBrakeDistanceLeftBackRadar(double velocity);
 double GetSafeDistanceLeftBackRadar(LeftBackRadar LBR);
 
 
+double GetBrakeDistanceLeftFrontRadar(double velocity);
+double GetSafeDistanceLeftFrontRadar(LeftFrontRadar LFR);
+
+
+
+
 
 
 

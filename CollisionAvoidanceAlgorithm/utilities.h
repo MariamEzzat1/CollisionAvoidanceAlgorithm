@@ -10,7 +10,10 @@
 #ifndef UTILITIES_H
 #define UTILITIES_H
 
+#include "RadarDistances.h"
+
 #define pi 3.14159265358979323846
+#define CAR_MASS 1400 
 
 
  /*
@@ -18,18 +21,22 @@
  * Parameters  : "AngleInDegree" The Angle which is wanted to be convert from Deg to rad
  */
 double DegToRad(double AngleInDegree);
-/*
-* Description : Convert Given diagonal Distance to Horizontal Distance using the Azimuth Angle
-* Parameters  : "Angle" The azimuth angle 
-*               "DiagonalDistance " the Diagonal distance which is needed to convert to horizontal Distance
-*/
+double RadToDeg(double AngleinRad);
+double BrakeForce(FrontRadar FR);
+double GetTriangleAngleInRad(double distanceX, double distanceY);
+///*
+//* Description : Convert Given diagonal Distance to Horizontal Distance using the Azimuth Angle
+//* Parameters  : "Angle" The azimuth angle 
+//*               "DiagonalDistance " the Diagonal distance which is needed to convert to horizontal Distance
+//*/
 double GetHorizontalDistance(double DiagonalDistance, double Angle);
-/*
-* Description : Convert Given Horizontal Distance to diagonal Distance using the Azimuth Angle
-* Parameters  : "Angle" The azimuth angle
-*               "Horizontal " the Horizontal distance which is needed to convert to diagonal Distance
-*/
-double GetDiagonalDistance(double HorizontalDistance, double Angle);
+
+///*
+//* Description : Convert Given Horizontal Distance to diagonal Distance using the Azimuth Angle
+//* Parameters  : "Angle" The azimuth angle
+//*               "Horizontal " the Horizontal distance which is needed to convert to diagonal Distance
+//*/
+double GetDiagonalDistance(double VerticalDistance, double Angle);
 
 
 

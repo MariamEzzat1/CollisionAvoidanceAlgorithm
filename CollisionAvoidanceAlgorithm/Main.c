@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "CollisionAvoidanceAlgorithm.h"
 
 #define SIZE 3
 
@@ -16,4 +17,5 @@ int main()
 {
 	int *arr;
 	arr = CollisionAvoidanceAlgorithm();
+	return 0;
 }
